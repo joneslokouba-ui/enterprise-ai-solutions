@@ -36,7 +36,7 @@ def load_rag_system():
         else:
             st.info("Building knowledge base for first time...")
             from src.loader import TaxDocumentLoader
-            docs_folder = os.getenv("DOCS_FOLDER", "D:\\")
+            docs_folder = os.getenv("DOCS_FOLDER", "data")
             loader = TaxDocumentLoader(
                 docs_folder=docs_folder,
                 chunk_size=500,
