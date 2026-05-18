@@ -1,0 +1,16 @@
+# Secrets — never commit these
+.env
+*.env
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# FAISS index — rebuilt from documents
+faiss_index/
+
+# PyCharm
+.idea/
